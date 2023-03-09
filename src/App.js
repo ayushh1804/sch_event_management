@@ -23,6 +23,8 @@ function App() {
               <Navbar />
               <Landing />
               <Eventdetails />
+             
+
               
             </>
           }
@@ -44,6 +46,16 @@ function App() {
             <>
               <Navbar />
               <Calendar />
+
+            </>
+          }
+        />
+        <Route
+          path="/newevent"
+          element={
+            <>
+              <Navbar />
+              <NewEvent />
 
             </>
           }
