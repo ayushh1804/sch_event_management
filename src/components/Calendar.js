@@ -65,6 +65,7 @@ function Calendar() {
 
   return (
     <div className='mt-20 text-2xl font-normal '>
+        <p>Event Scheduler</p>
     <div className={styles.calendar}>
       <div className={styles.header}>
         <button className='border p-1' onClick={() => setSelectedDate(new Date())}>Today</button>

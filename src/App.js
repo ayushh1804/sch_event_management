@@ -4,6 +4,11 @@ import Calendar from './components/Calendar';
 import Inputpage from './components/Inputpage';
 import Landing from './components/Landing';
 import Navbar from './components/Navbar';
+import Eventdetails from './components/Eventdetails';
+import NewEvent from './components/NewEvent';
+import PrevEvent from './components/PrevEvent';
+
+
 
 function App() {
   return (
@@ -17,6 +22,8 @@ function App() {
             <>
               <Navbar />
               <Landing />
+              <Eventdetails />
+              
             </>
           }
         />
@@ -32,7 +39,7 @@ function App() {
           }
         />
         <Route
-          path="calendar"
+          path="/event/calendar"
           element={
             <>
               <Navbar />

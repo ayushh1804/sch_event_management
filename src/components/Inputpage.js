@@ -19,7 +19,7 @@ function Inputpage() {
   return (
     <div className=''>
         <p className='my-40 text-3xl font-semibold capitalize'>Please enter the event details</p>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} autocomplete="off">
       <label className='text-lg'>
         Name of the Event
         <input type="text" name="name" value={formData.name} onChange={handleChange} className="border rounded-lg mx-3"/>
