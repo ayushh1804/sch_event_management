@@ -4,7 +4,7 @@ function Inputpage() {
   const [formData, setFormData] = useState({
     name: '',
     venues: '',
-    message: ''
+    date: ''
   });
 
   const handleChange = (event) => {
@@ -20,19 +20,19 @@ function Inputpage() {
     <div className=''>
         <p className='my-40 text-3xl font-semibold capitalize'>Please enter the event details</p>
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className='text-lg'>
         Name of the Event
-        <input type="text" name="name" value={formData.name} onChange={handleChange} className=""/>
+        <input type="text" name="name" value={formData.name} onChange={handleChange} className="border rounded-lg mx-3"/>
       </label>
-      <label>
+      <label className='text-lg'>
         Venue:
-        <input list="venues" name="venues" value={formData.venues} onChange={handleChange} />
+        <input list="venues" name="venues" value={formData.venues} onChange={handleChange} className="mx-3" />
       </label>
-      <label>
-        Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} />
+      <label className='text-lg'>
+        Date
+        <input type="date" value={formData.date} onChange={handleChange}  className="mx-3"/>
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit" className='border p-2 rounded-lg bg-gray-100 ml-3'>Submit</button>
     </form>
     </div>
   );
