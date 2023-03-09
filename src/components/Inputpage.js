@@ -26,7 +26,13 @@ function Inputpage() {
       </label>
       <label className='text-lg'>
         Venue:
-        <input list="venues" name="venues" value={formData.venues} onChange={handleChange} className="mx-3" />
+        <select className='mx-3'>
+  <option value="Dr. T.P Ganesan Auditorium">Dr. T.P Ganesan Auditorium</option>
+  <option value="Seminar Hall">Seminar Hall</option>
+  <option selected value="Minihall 1">Minihall 1</option>
+  <option value="mango">Minihall 2</option>
+</select>
+        {/* <input list="venues" name="venues" value={formData.venues} onChange={handleChange} className="mx-3" /> */}
       </label>
       <label className='text-lg'>
         Date
