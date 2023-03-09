@@ -1,1 +1,0 @@
-# sih_event_management
