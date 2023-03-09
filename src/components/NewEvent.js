@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 function BasicForm() {
     // Declare state variables for form input values
     const [name, setName] = useState('');
@@ -48,11 +48,11 @@ function BasicForm() {
                             />
                         </div>
                     </div>
-                    <button type="submit" className='mt-10 border bg-gray-100 rounded p-2'>Submit</button>
+                    <Link to="/event">   <button type="submit" className='mt-10 border bg-gray-100 rounded p-2'>Submit</button></Link>
                 </form>
 
             </div>
-            <button className='mt-20 border bg-green-300 rounded-lg hover:bg-green-400 p-3'>Generate Event Registration Link</button>
+        <button className='mt-20 border bg-green-300 rounded-lg hover:bg-green-400 p-3'>Generate Event Registration Link</button>
 
         </div>
     );

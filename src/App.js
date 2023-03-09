@@ -13,55 +13,65 @@ import PrevEvent from './components/PrevEvent';
 function App() {
   return (
     <BrowserRouter>
-    <div className='App'>
-    
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navbar />
-              <Landing />
-              <Eventdetails />
-             
+      <div className='App'>
 
-              
-            </>
-          }
-        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Landing />
+                <Eventdetails />
 
-        <Route
-          path="event"
-          element={
-            <>
-              <Navbar />
-              <Inputpage />
 
-            </>
-          }
-        />
-        <Route
-          path="/event/calendar"
-          element={
-            <>
-              <Navbar />
-              <Calendar />
 
-            </>
-          }
-        />
-        <Route
-          path="/newevent"
-          element={
-            <>
-              <Navbar />
-              <NewEvent />
+              </>
+            }
+          />
 
-            </>
-          }
-        />
-      </Routes>
-    </div>
+          <Route
+            path="event"
+            element={
+              <>
+                <Navbar />
+                <Inputpage />
+
+              </>
+            }
+          />
+          <Route
+            path="/calendar"
+            element={
+              <>
+                <Navbar />
+                <Calendar />
+
+              </>
+            }
+          />
+          <Route
+            path="/NewEvents"
+            element={
+              <>
+                <Navbar />
+                <NewEvent />
+
+              </>
+            }
+          />
+          <Route
+            path="/PrevEvents"
+            element={
+              <>
+                <Navbar />
+                <PrevEvent />
+
+              </>
+            }
+          />
+        </Routes>
+      </div>
     </BrowserRouter>
     // {/* // <>
     // // <Navbar />
