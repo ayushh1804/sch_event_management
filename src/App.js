@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Eventdetails from './components/Eventdetails';
 import NewEvent from './components/NewEvent';
 import PrevEvent from './components/PrevEvent';
-
+import Catering from './components/Catering';
 
 
 function App() {
@@ -66,6 +66,16 @@ function App() {
               <>
                 <Navbar />
                 <PrevEvent />
+
+              </>
+            }
+          />
+          <Route
+            path="/refreshments"
+            element={
+              <>
+                <Navbar />
+                <Catering />
 
               </>
             }

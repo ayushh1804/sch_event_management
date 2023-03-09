@@ -52,7 +52,7 @@ function BasicForm() {
                 </form>
 
             </div>
-        <button className='mt-20 border bg-green-300 rounded-lg hover:bg-green-400 p-3'>Generate Event Registration Link</button>
+            <button className='mt-20 border bg-green-300 rounded-lg hover:bg-green-400 p-3'>Generate Event Registration Link</button>
 
         </div>
     );
