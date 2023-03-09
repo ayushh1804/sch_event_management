@@ -55,7 +55,7 @@ function Calendar() {
     days.push(
       <div
         key={i}
-        className={`day ${date.getDate() === selectedDate.getDate() ? 'selected' : ''}`}
+        className={`${styles.day} rounded-lg ${date.getDate() === selectedDate.getDate() ? 'selected' : ''}`}
         onClick={() => handleClick(date)}
       >
         {i}
